@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho - Educação e Sustentabilidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agrinho</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#programas">Programas</a></li>
+                    <li><a href="#como-participar">Como Participar</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio">
+        <div class="container">
+            <h2>Bem-vindo ao Agrinho!</h2>
+            <p>O Agrinho é um projeto educacional dedicado a promover a consciência ambiental e a sustentabilidade através da educação. Trabalhamos para ensinar jovens sobre a importância da agricultura sustentável e a preservação do meio ambiente.</p>
+            <img src="imagem-inicio.jpg" alt="Agrinho Projeto">
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre o Agrinho</h2>
+            <p>O Agrinho é uma iniciativa que visa integrar conceitos de sustentabilidade e práticas agrícolas no currículo escolar. Nosso objetivo é envolver crianças e adolescentes em atividades que promovam a compreensão dos ciclos naturais, o cultivo responsável e a importância da preservação ambiental.</p>
+            <h3>Nossa Missão</h3>
+            <p>Inspire e capacite a próxima geração a cuidar do planeta através da educação prática e da conscientização ambiental.</p>
+            <h3>Visão</h3>
+            <p>Criar um mundo onde jovens se tornem agentes ativos na proteção do meio ambiente e na promoção da agricultura sustentável.</p>
+            <img src="imagem-sobre.jpg" alt="Sobre Agrinho">
+        </div>
+    </section>
+
+    <section id="programas">
+        <div class="container">
+            <h2>Nossos Programas</h2>
+            <p>O Agrinho oferece uma variedade de programas educacionais projetados para engajar e educar jovens sobre temas ambientais e agrícolas. Conheça nossos principais programas:</p>
+            <ul>
+                <li><strong>Educação Ambiental:</strong> Aulas e atividades práticas sobre conservação, ecossistemas e mudanças climáticas.</li>
+                <li><strong>Horta Escolar:</strong> Implantação e manutenção de hortas nas escolas para promover o aprendizado sobre cultivo e nutrição.</li>
+                <li><strong>Oficinas de Sustentabilidade:</strong> Workshops sobre técnicas de cultivo sustentável, compostagem e reciclagem.</li>
+            </ul>
+            <img src="imagem-programas.jpg" alt="Programas Agrinho">
+        </div>
+    </section>
+
+    <section id="como-participar">
+        <div class="container">
+            <h2>Como Participar</h2>
+            <p>Quer se envolver com o Agrinho e fazer a diferença? Aqui estão algumas maneiras de participar:</p>
+            <ul>
+                <li><strong>Voluntariado:</strong> Ofereça seu tempo para ajudar nas atividades e eventos do projeto.</li>
+                <li><strong>Parcerias:</strong> Junte-se a nós como parceiro para apoiar nossas iniciativas através de patrocínios e doações.</li>
+                <li><strong>Educação:</strong> Participe das nossas oficinas e treinamentos para aprender mais sobre práticas sustentáveis.</li>
+            </ul>
+            <p>Para mais informações sobre como participar, entre em contato conosco através da seção de contato.</p>
+            <img src="imagem-participar.jpg" alt="Como Participar">
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Tem alguma dúvida ou deseja saber mais sobre o Agrinho? Entre em contato conosco!</p>
+            <form action="submit-form.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Agrinho. Todos os direitos reservados. | <a href="#inicio">Voltar ao topo</a></p>
+        </div>
+    </footer>
+</body>
+</html>
+Estilos CSS (styles.css)
+css
+Copiar código
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
